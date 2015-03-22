@@ -1,4 +1,4 @@
-
+5
 insert into area(nombre) values ('Estudio');
 insert into area(nombre) values ('Alimentacion');
 insert into area(nombre) values ('Estacionamiento');
@@ -19,15 +19,15 @@ insert into lugar(nombre, area, capacidad) values ('Estadio Tercera Planta', 3, 
 select * from lugar;
 
 insert into individuales(lugar, estacion, estado) values (1, 1, 0);	--'Cetec 1er Piso'
-insert into individuales(lugar, estacion, estado) values (1, 2, 0);	--'Biblioteca 4to Piso'
-insert into individuales(lugar, estacion, estado) values (1, 3, 0);	--'CIAP 213'
-insert into individuales(lugar, estacion, estado) values (4, 1, 0);	--'Salas Biblioteca 3er Piso'
+insert into individuales(lugar, estacion, estado) values (1, 2, 0);	--'Cetec 1er Piso'
+insert into individuales(lugar, estacion, estado) values (1, 3, 0);	--'Cetec 1er Piso'
+insert into individuales(lugar, estacion, estado) values (4, 4, 0);	--'Salas Biblioteca 3er Piso'
 
 select * from individuales;
 
 insert into grupales(lugar, ocupacion) values (5, 100);
-insert into grupales(lugar, ocupacion) values (6, 10);
-insert into grupales(lugar, ocupacion) values (7, 100);
+insert into grupales(lugar, ocupacion) values (6, 60);
+insert into grupales(lugar, ocupacion) values (7, 20);
 insert into grupales(lugar, ocupacion) values (8, 10);
 
 select * from grupales;
