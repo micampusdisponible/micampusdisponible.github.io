@@ -12,7 +12,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <title>Mi Campus Disponible</title>
-<h1> Alimentación </h1>
+<h1> Residencias </h1>
 
 </head>
 
@@ -35,15 +35,15 @@
 
  
             echo "<tr>";
-                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Centrales ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-tint' aria-hidden='true'></span> Lavadoras (Resis III) ". "</td>";
                 echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 25 / 100 ". "</td>";
             echo "</tr>";
             echo "<tr>";
-                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Borrego ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-fire' aria-hidden='true'></span> Secadoras (Resis III) ". "</td>";
                 echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 12 / 30 ". "</td>";
             echo "</tr>";
             echo "<tr>";
-                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Jubileo ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-scale' aria-hidden='true'></span> Máquinas Cardio (Gym Resis III) ". "</td>";
                 echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 30 / 65 ". "</td>";
             echo "</tr>";
     
