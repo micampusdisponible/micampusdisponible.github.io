@@ -52,7 +52,7 @@ if ($result->num_rows > 0) {
 
 
     echo "<tr>";
-        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> CETEC ". $row["estacion"]. "</td>";
+        echo "<td><span class='glyphicon glyphicon-education' aria-hidden='true'></span> CETEC ". $row["estacion"]. "</td>";
         echo "<td>Estado ". $row["estado"]. "</td>";
 
     echo "</tr>";

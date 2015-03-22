@@ -35,8 +35,8 @@
 
 
     echo "<tr>";
-        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> CETEC ". $row["estacion"]. "</td>";
-        echo "<td>Estado ". $row["estado"]. "</td>";
+        echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Centrales ". "</td>";
+        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 4 / 30 ". "</td>";
 
     echo "</tr>";
     
