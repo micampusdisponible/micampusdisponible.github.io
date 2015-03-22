@@ -1,8 +1,8 @@
 <?php
-$servername = "micampus.cu1ycavyugvg.us-west-2.rds.amazonaws.com:3306";
-$username = "username";
-$password = "password";
-$dbname = "MiCampus";
+$servername = "mysql16.000webhost.com";
+$username = "a9764979_hackmty";
+$password = "hackmty2015";
+$dbname = "a9764979_MiCampu";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
