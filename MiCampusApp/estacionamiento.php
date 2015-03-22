@@ -18,41 +18,11 @@
 
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Mi Campus Disponible</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li ><a href="#">Contacto </a></li>
-        <li><a href="#">Login</a></li>
-        
-      </ul>
-    
-      
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<?php  @include("header.php"); ?>
 
 <h1> Estacionamiento </h1>
 
-<a class="btn btn-primary" href="http://micampusdisponible.herobo.com/estudio.php" role="button">Estudio</a>
-<a class="btn btn-success" href="http://micampusdisponible.herobo.com/alimentacion.php" role="button">Alimentación</a>
-<a class="btn btn-danger" href="http://micampusdisponible.herobo.com/estacionamiento.php" role="button">Estacionamiento</a>
-<a class="btn btn-info" href="http://micampusdisponible.herobo.com/residencias.php" role="button">Residencias</a>
-
+<?php  @include("botones.php"); ?>
 <?php
 $servername = "mysql16.000webhost.com";
 $username = "a9764979_hackmty";
@@ -71,6 +41,9 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
+echo "<div class='row'>";
+  echo "<div class='col-md-4'>";
+
     echo "<table class='table table-hover'>";
 
         echo "<tr>";
@@ -89,9 +62,11 @@ if ($result->num_rows > 0) {
 
     }
         echo "</table>";
+echo "</div></div>";
 } else {
     echo "0 results";
 }
+
 
 
 $conn->close();
