@@ -14,7 +14,6 @@ if ($conn->connect_error) {
 $incremento = intval($_GET['incremento']);
 $lugar = intval($_GET['lugar']);
 $sql = "SELECT ocupacion from grupales where lugar = '".$lugar."'";
-$conn->close();
 $result = $conn->query($sql);
 $incremento = $incremento + $result;
 $sql = "UPDATE grupales SET ocupacion='".$incremento."' WHERE lugar='".$lugar."'";
