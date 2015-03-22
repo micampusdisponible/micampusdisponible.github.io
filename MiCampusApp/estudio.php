@@ -36,7 +36,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM individuales";
+$sql = "select l.nombre as nombre, count(l.id) as cantidad, l.capacidad as capacidad from individuales i, lugar l where i.lugar = l.id and l.area = 1 and i.estado = 1 group by l.id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -52,8 +52,8 @@ if ($result->num_rows > 0) {
 
 
     echo "<tr>";
-        echo "<td><span class='glyphicon glyphicon-education' aria-hidden='true'></span> CETEC ". $row["estacion"]. "</td>";
-        echo "<td>Estado ". $row["estado"]. "</td>";
+        echo "<td><span class='glyphicon glyphicon-education' aria-hidden='true'></span>  ". $row["nombre"]. "</td>";
+        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> Ocupacion ". $row["cantidad"]. "/". $row["capacidad"]."</td>";
 
     echo "</tr>";
     

@@ -33,12 +33,19 @@
         echo "</tr>";
 
 
-
-    echo "<tr>";
-        echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Centrales ". "</td>";
-        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 4 / 30 ". "</td>";
-
-    echo "</tr>";
+ 
+            echo "<tr>";
+                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Centrales ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 25 / 100 ". "</td>";
+            echo "</tr>";
+            echo "<tr>";
+                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Borrego ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 12 / 30 ". "</td>";
+            echo "</tr>";
+            echo "<tr>";
+                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Jubileo ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 30 / 65 ". "</td>";
+            echo "</tr>";
     
 
 

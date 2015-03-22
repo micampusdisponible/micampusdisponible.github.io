@@ -24,41 +24,12 @@
 <a class="btn btn-info" href="http://micampusdisponible.herobo.com/residencias.php" role="button">Residencias</a>
 
 <?php
-$servername = "mysql16.000webhost.com";
-$username = "a9764979_hackmty";
-$password = "hackmty2015";
-$dbname = "a9764979_MiCampu";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+//<a href="http://javier.rodriguez.org.mx/itesm/tecnologico.png">link text</a>
 
-$sql = "SELECT * FROM individuales";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    echo "<table class='table table-hover'>";
-    
-    while($row = $result->fetch_assoc()) {
-    echo "<tr>";
-        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span>Máquina ". $row["estacion"]. "</td>";
-        echo "<td>Estado ". $row["estado"]. "</td>";
-
-    echo "</tr>";
-    
-    }
-        echo "</table>";
-} else {
-    echo "0 results";
-}
-
-
-$conn->close();
 ?>
+<br>
+<img src="http://javier.rodriguez.org.mx/itesm/tecnologico.png" alt="ITESM" style="width:500px;height:200px">
 
 </body>
 </html>
