@@ -1,4 +1,4 @@
-<!DOCTYPE html>\
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -19,7 +19,7 @@
 <body>
 
 <a class="btn btn-primary" href="http://micampusdisponible.herobo.com/estudio.php" role="button">Estudio</a>
-<a class="btn btn-warning" href="http://micampusdisponible.herobo.com/alimentacion.php" role="button">Alimentación</a>
+<a class="btn btn-success" href="http://micampusdisponible.herobo.com/alimentacion.php" role="button">Alimentación</a>
 <a class="btn btn-danger" href="http://micampusdisponible.herobo.com/estacionamiento.php" role="button">Estacionamiento</a>
 <a class="btn btn-info" href="http://micampusdisponible.herobo.com/residencias.php" role="button">Residencias</a>
 
@@ -35,15 +35,15 @@
 
  
             echo "<tr>";
-                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Lavadoras (Resis III) ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-tint' aria-hidden='true'></span> Lavadoras (Resis III) ". "</td>";
                 echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 25 / 100 ". "</td>";
             echo "</tr>";
             echo "<tr>";
-                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Secadoras (Resis III) ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-fire' aria-hidden='true'></span> Secadoras (Resis III) ". "</td>";
                 echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 12 / 30 ". "</td>";
             echo "</tr>";
             echo "<tr>";
-                echo "<td><span class='glyphicon glyphicon-ice-lolly-tasted' aria-hidden='true'></span> Máquinas Cardio (Gym Resis III) ". "</td>";
+                echo "<td><span class='glyphicon glyphicon-scale' aria-hidden='true'></span> Máquinas Cardio (Gym Resis III) ". "</td>";
                 echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> 30 / 65 ". "</td>";
             echo "</tr>";
     
