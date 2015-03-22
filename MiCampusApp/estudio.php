@@ -22,7 +22,9 @@
 <a class="btn btn-success" href="http://micampusdisponible.herobo.com/alimentacion.php" role="button">Alimentación</a>
 <a class="btn btn-danger" href="http://micampusdisponible.herobo.com/estacionamiento.php" role="button">Estacionamiento</a>
 <a class="btn btn-info" href="http://micampusdisponible.herobo.com/residencias.php" role="button">Residencias</a>
-
+<br>
+<br>
+<h3> Individuales </h3>
 <?php
 $servername = "mysql16.000webhost.com";
 $username = "a9764979_hackmty";
@@ -42,7 +44,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     echo "<table class='table table-hover'>";
-    
+
         echo "<tr>";
             echo "<td> <h3> <b> Ubicación </b> </h3> ". "</td>";
             echo "<td> <h3> <b> Disponibilidad </b> </h3>". "</td>";
@@ -56,13 +58,55 @@ if ($result->num_rows > 0) {
         echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> Ocupacion ". $row["cantidad"]. "/". $row["capacidad"]."</td>";
 
     echo "</tr>";
-    
+
     }
         echo "</table>";
 } else {
     echo "0 results";
 }
 
+?>
+<br>
+<h3> Grupales </h3>
+
+<?php
+$servername = "mysql16.000webhost.com";
+$username = "a9764979_hackmty";
+$password = "hackmty2015";
+$dbname = "a9764979_MiCampu";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "select l.nombre as nombre, g.ocupacion as cantidad, l.capacidad as capacidad from grupales g, lugar l where g.lugar = l.id and l.area = 1";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    echo "<table class='table table-hover'>";
+
+        echo "<tr>";
+            echo "<td> <h3> <b> Ubicación </b> </h3> ". "</td>";
+            echo "<td> <h3> <b> Disponibilidad </b> </h3>". "</td>";
+        echo "</tr>";
+
+    while($row = $result->fetch_assoc()) {
+
+
+    echo "<tr>";
+        echo "<td><span class='glyphicon glyphicon-education' aria-hidden='true'></span>  ". $row["nombre"]. "</td>";
+        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> Ocupacion ". $row["cantidad"]. "/". $row["capacidad"]."</td>";
+
+    echo "</tr>";
+
+    }
+        echo "</table>";
+} else {
+    echo "0 results";
+}
 
 $conn->close();
 ?>
