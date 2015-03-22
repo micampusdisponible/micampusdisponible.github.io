@@ -28,7 +28,7 @@
     echo "<table class='table table-hover'>";
     
         echo "<tr>";
-            echo "<td> <h3> <b> Lugar </b> </h3> ". "</td>";
+            echo "<td> <h3> <b> Ubicación </b> </h3> ". "</td>";
             echo "<td> <h3> <b> Disponibilidad </b> </h3>". "</td>";
         echo "</tr>";
 
