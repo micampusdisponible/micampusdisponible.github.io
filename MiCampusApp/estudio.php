@@ -18,10 +18,10 @@
 
 <body>
 
-<a class="btn btn-primary" href="http://micampusdisponible.herobo.com/prueba.php" role="button">Estudio</a>
-<a class="btn btn-warning" href="http://micampusdisponible.herobo.com/prueba.php" role="button">Alimentación</a>
-<a class="btn btn-danger" href="http://micampusdisponible.herobo.com/prueba.php" role="button">Estacionamiento</a>
-<a class="btn btn-info" href="http://micampusdisponible.herobo.com/prueba.php" role="button">Residencias</a>
+<a class="btn btn-primary" href="http://micampusdisponible.herobo.com/estudio.php" role="button">Estudio</a>
+<a class="btn btn-warning" href="http://micampusdisponible.herobo.com/alimentacion.php" role="button">Alimentación</a>
+<a class="btn btn-danger" href="http://micampusdisponible.herobo.com/estacionamiento.php" role="button">Estacionamiento</a>
+<a class="btn btn-info" href="http://micampusdisponible.herobo.com/residencias.php" role="button">Residencias</a>
 
 <?php
 $servername = "mysql16.000webhost.com";
