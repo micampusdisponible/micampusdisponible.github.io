@@ -43,9 +43,16 @@ if ($result->num_rows > 0) {
     // output data of each row
     echo "<table class='table table-hover'>";
     
+        echo "<tr>";
+            echo "<td> <h3> <b> Lugar </b> </h3> ". "</td>";
+            echo "<td> <h3> <b> Disponibilidad </b> </h3>". "</td>";
+        echo "</tr>";
+
     while($row = $result->fetch_assoc()) {
+
+
     echo "<tr>";
-        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span>Máquina ". $row["estacion"]. "</td>";
+        echo "<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span> CETEC ". $row["estacion"]. "</td>";
         echo "<td>Estado ". $row["estado"]. "</td>";
 
     echo "</tr>";
